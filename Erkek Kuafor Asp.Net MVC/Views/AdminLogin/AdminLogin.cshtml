@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login Panel</title>
+    <link rel="stylesheet" href="~/admin-login-form-main/admin-login-form-main/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="myform">
+            @using (Html.BeginForm("AdminLogin", "AdminLogin", FormMethod.Post))
+            {
+                <h2>ADMİN GİRİŞİ</h2>
+                <input type="text" name="kullaniciadi" placeholder="Kullanici Adi  ">
+                <input type="password" name="sifre" placeholder="Şifre">
+                <button type="submit">GİRİŞ</button>
+            }
+        </div>
+        <div class="image">
+            <img src="~/web/images/admin-png1.png">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3 class="w3-bar-item">Admin Panel</h3>
+        <a href="#" class="w3-bar-item w3-button">AnaSayfa</a>
+        <a href="/Admin/RandevuGetir" class="w3-bar-item w3-button">Randevu İşlemleri</a>
+        <a href="/Admin/Index" class="w3-bar-item w3-button">Hizmetler</a>
+        <a href="/Anasayfa/Index" class="w3-bar-item w3-button btn-info">Siteye Git</a>
+        <a href="/AdminLogin/LogOut" class="w3-bar-item w3-button btn-danger">Çıkış Yap</a>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left:25%">
+
+        <div class="w3-container w3-teal">
+            <h1>Erkek Kuafor Salonum</h1>
+        </div>
+
+        
+
+        <div class="w3-container">
+            @RenderBody()
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+

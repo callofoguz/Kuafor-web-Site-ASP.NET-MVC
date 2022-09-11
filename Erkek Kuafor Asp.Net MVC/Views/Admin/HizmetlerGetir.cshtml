@@ -1,0 +1,29 @@
+﻿@model Deneme09.Models.Siniflar.Hizmetler
+@{
+    ViewBag.Title = "HizmetlerGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mt-4">Hizmetler Güncelle</h2>
+<hr />
+
+@using (Html.BeginForm("HizmetlerGuncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.id)
+    @Html.TextBoxFor(x => x.id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.islem)
+    @Html.TextBoxFor(x => x.islem, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.islemacıkla)
+    @Html.TextBoxFor(x => x.islemacıkla, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.fiyat)
+    @Html.TextBoxFor(x => x.fiyat, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Hizmetler Güncelle</button>
+
+
+}
+
+

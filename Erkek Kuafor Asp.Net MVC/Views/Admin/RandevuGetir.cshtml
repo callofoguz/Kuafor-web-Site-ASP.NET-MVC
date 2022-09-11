@@ -1,0 +1,42 @@
+﻿@using Deneme09.Models.Siniflar
+@model List<Randevu>
+
+@{
+    ViewBag.Title = "RandevuGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Randevu İşlemleri</h2>
+
+
+
+
+
+<table class="table table-bordered mt-3">
+    <tr>
+        <th> Id</th>
+        <th> Ad Soyad</th>
+        <th> Telefon</th>
+        <th> Yapılacak İşlem</th>
+        <th> Tarih</th>
+        <th> Saat</th>
+        @*<th> Güncelle</th>*@
+    </tr>
+
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.id</td>
+            <td>@x.adSoyad</td>
+            <td>@x.telefon</td>
+            <td>@x.yapılacakIslem</td>
+            <td>@x.tarih</td>
+            <td>@x.saat</td>
+
+            @*<td><a href="/Admin/HizmetlerGetir/@x.id" class="btn btn-primary"> Güncelle</a></td>*@
+        </tr>
+    }
+
+
+</table>
+
